@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Documentación C++</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentación C++</header>
+        <ul>
+            <li>
+                <a href="#Introduccion" class="nav-link">Introduccion</a>
+            </li>
+            <li>
+                <a href="#Variables" class="nav-link">Variables</a>
+            </li>
+            <li>
+                <a href="#Hello_world" class="nav-link">Hello world</a>
+            </li>
+            <li>
+                <a href="#Arrays" class="nav-link">Arrays</a>
+            </li>
+            <li>
+                <a href="#Ciclos_condicionales" class="nav-link">Ciclos condicionales</a>
+            </li>
+            <li>
+                <a href="#Ciclos_repetitivos" class="nav-link">Ciclos repetitivos</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <div class="content">
+                <p>
+                    Esta es la documentación no oficial del lenguaje C++. Aquí encontraras algunos conceptos básicos los cuales necesitaras para adentrarte al mismo.<br> NOTA: Recomendable utilizar el IDE DEV C++ para el desarrollo del lenguaje.
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <div class="content">
+                <p>
+                    Las variables son contenedores para almacenar valores de datos.<br> En C ++, existen diferentes tipos de variables (definidas con diferentes palabras clave), por ejemplo:
+                    <ul>
+                        <li>
+                            <code>int</code> - almacena enteros (números enteros), sin decimales, como 123 o -123.
+                        </li>
+                        <li>
+                            <code>double</code> - almacena números de punto flotante, con decimales, como 19,99 o -19,99.
+                        </li>
+                        <li>
+                            <code>char</code> - almacena caracteres individuales, como 'a' o 'B'. Los valores de caracteres están rodeados por comillas simples.
+                        </li>
+                        <li>
+                            <code>string</code> - almacena texto, como "Hola mundo". Los valores de cadena están rodeados por comillas dobles.
+                        </li>
+                        <li>
+                            <code>bool</code> - almacena valores con dos estados: verdadero o falso.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <h3>Declarar variables</h3>
+                    La sintaxis para declarar las variables en C++ es la siguiente:<br>
+                    <div class="code">
+                        <code>type variable_name = value;</code>
+                    </div>
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <div class="content">
+                Es realmente sencillo construir el famoso "Hello World" en este lenguaje, veamos como hacerlo:<br>
+                <div class="code">
+                    <code>
+                        #include&#60iostream&#62&#59<br>
+                        using namespace std&#59<br>
+                        main&#40&#41 &#123<br>
+                        &nbspcout &#60&#60 "Hello world"&#59<br>
+                        &#125
+                    </code>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <div class="content">
+                <p>
+                    Las matrices se utilizan para almacenar varios valores en una sola variable, en lugar de declarar variables independientes para cada valor.<br> Para declarar una matriz, defina el tipo de variable, especifique el nombre de la matriz
+                    seguido de corchetes y especifique la cantidad de elementos que debe almacenar:
+                </p>
+                <div class="code">
+                    <code>string cars&#91&#53&#93&#59</code>
+                </div>
+                <p>
+                    Ahora hemos declarado una variable que contiene una matriz de cuatro cadenas. Para insertar valores en él, podemos usar un literal de matriz: coloque los valores en una lista separada por comas, entre llaves:<br>
+                    <div class="code">
+                        <code>string cars&#91&#53&#93 &#61 &#123"Ferrari", "Lamborghini", "Ford", "Tesla"&#125 &#59 </code>
+                    </div>
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Ciclos_condicionales">
+            <header>Ciclos condicionales</header>
+            <div class="content">
+                <p>
+                    C ++ admite las condiciones lógicas habituales de las matemáticas:
+                    <ul>
+                        <li>
+                            <code>a &#60 b</code> menor que.
+                        </li>
+                        <li>
+                            <code>a &#60&#61 b</code> menor o igual que.
+                        </li>
+                        <li>
+                            <code>a &#62 b</code> mayor que.
+                        </li>
+                        <li>
+                            <code>a &#62&#61 b</code> mayor o igual que.
+                        </li>
+                        <li>
+                            <code>a &#61&#61 b</code> igual a.
+                        </li>
+                        <li>
+                            <code>a &#33&#61 b</code> diferente de.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Puede utilizar estas condiciones para realizar diferentes acciones para diferentes decisiones. C ++ tiene las siguientes declaraciones condicionales:
+                    <ul>
+                        <li>
+                            Se usa <code>if</code> para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera.
+                        </li>
+                        <li>
+                            Se usa <code>else</code> para especificar un bloque de código que se ejecutará, si la misma condición es falsa.
+                        </li>
+                        <li>
+                            Se usa <code>else if</code> para especificar una nueva condición para probar, si la primera condición es falsa.
+                        </li>
+                        <li>
+                            Se usa <code>switch</code> para especificar muchos bloques alternativos de código a ejecutar.
+                        </li>
+                    </ul>
+                </p>
+                En el siguiente ejemplo, probamos dos valores para averiguar si 20 es mayor que 18. Si la condición es true, imprima algo de texto:<br><br>
+                <div class="code">
+                    <code>
+                        if &#40 20 &#62 18 &#41 &#123 <br>&nbsp cout &#62&#62 "20 si es mayor que 18"&#59<br>&#125
+                    </code>
+                </div>
+                <br> NOTA: Importante usar <code>if</code> en minusculas. De lo contrario podría generar error.
+            </div>
+        </section>
+        <section class="main-section" id="Ciclos_repetitivos">
+            <header>Ciclos repetitivos</header>
+            <div class="content">
+                <p>Los bucles pueden ejecutar un bloque de código siempre que se alcance una condición específica.
+                    <br>Los bucles son útiles porque ahorran tiempo, reducen errores y hacen que el código sea más legible.
+                </p>
+                <h3>Ciclo while</h3>
+                <p>
+                    El bucle <code>while</code> recorre un bloque de código siempre que una condición especificada sea <code>true</code>.<br>En el siguiente ejemplo, el código del bucle se ejecutará una y otra vez siempre que una variable <code>&#40&#105&#41</code>                    sea menor que 5:
+                    <br>
+                    <div class="code">
+                        <code>
+                            int i &#61 &#48&#59<br>
+                            while &#40 i &#60 5 &#41 &#123<br>
+                            &nbsp cout &#60&#60 i &#60&#60 "\n"&#59<br>
+                            &nbsp i++&#59<br>
+                            &#125
+                        </code>
+                    </div>
+                    <br> NOTA: Si la variable <code>i</code> no es aumentada, el ciclo sera infinito.
+                </p>
+                <h3>Ciclo for</h3>
+                <p>
+                    Cuando sepa exactamente cuántas veces desea recorrer un bloque de código, use el ciclo <code>for</code> en lugar del ciclo <code>while</code>:
+                </p>
+                <div class="code">
+                    <code>
+                        for &#40 statement 1; statement 2; statement 3 &#41 &#123<br>
+                        &nbsp //code block to be executed<br>
+                        &#125
+                    </code>
+                </div>
+                <p>
+                    La <strong>declaración 1</strong> se ejecuta (una vez) antes de la ejecución del bloque de código.<br> La <strong>declaración 2</strong> define la condición para ejecutar el bloque de código.<br> La <strong>declaración 3</strong> se
+                    ejecuta (cada vez) después de que se haya ejecutado el bloque de código.<br> El siguiente ejemplo imprimirá los números del 0 al 4:
+                </p>
+                <div class="code">
+                    <code>
+                        for &#40 int i = 0; i &#60 4; i++ &#41 &#123<br>
+                        &nbsp cout &#60&#60 i &#60&#60 "\n"&#59<br>
+                        &#125
+                    </code>
+                </div>
+            </div>
+        </section>
+        <p>Para mas informacion visita el sitio oficial de <a href="https://www.w3schools.com/cpp/default.asp" id="link-moreinfo">W3schools C++</a></p>
+    </main>
+</body>
+
+</html>
